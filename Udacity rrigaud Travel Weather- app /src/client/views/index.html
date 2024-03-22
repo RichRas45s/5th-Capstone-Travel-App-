@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<htmL lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRAVEL APP 2024</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/client/styles/resets.scss">
+<link rel="stylesheet" href="/src/client/styles/base.scss">
+<link rel="stylesheet" href="/src/client/styles/header.scss">
+<link rel="stylesheet" href="/src/client/styles/form.scss">
+<link rel="stylesheet" href="/src/client/styles/footer.scss"> 
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+</head>
+ <body>
+   <header class = "container">
+      <div class="primary-header">
+         <img class="logo" src="/src/client/images/cityboylogo8.svg" alt ="logo"> 
+         <nav class = "primary navigation">
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#"> Shop</a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#"> Contact</a></li>
+          </nav>
+          </div> 
+  </header> 
+  <div class="container">
+  <div class="card-form">
+   <div class="container-form">
+         <form name= "form_main" class ="form" onsubmit="return Client.performAction(event)">  
+         <label for= "city">Enter city here</label>
+         <input type="text" name="input" id="city" value="" placeholder="Enter city here">
+         <label for="start">Start date:</label>
+         <input type="date" id= "start" name= "tripStart" />
+         <label for="end">End date:</label>
+         <input type="date" id= "end" name= "tripEnd" /> 
+         <input type="submit" id="button" value="submit" onclick="return Client.performAction(event)" onsubmit="return performAction(event)">
+      </form>
+   </div>
+</div>
+<div class="container wrapper">
+   <div class="container-time"> 
+      <div id = "countryName"></div> 
+      <div id = "population"> </div>  
+      <div id = "temp"></div>
+      <div id = "description"></div>
+   </div>
+      <div class="container__output">
+   <div id ="cityPic" class="cityPic"></div>
+   </div>
+   <div class="container-time">
+      <div id = "cityPlace"> </div> 
+      <div id = "leaveDate"></div>
+      <div id = "tripDays"></div>
+      <div id = "days"></div>
+      <div class="container__hour">
+      <div id = "hours"></div>
+      <div id = "minutes"></div>
+      <div id = "seconds"></div>
+ </div>
+   
+   </div>
+   <aside class="sidebar">
+      <h2 class="sidebar-title">Restuarants</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+
+      <h2 class="sidebar-title"><a href="#"> Beaches</a></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <img src="/src/client/images/mondello-beach-pier2.jpeg" alt="modello beach" class="sidebr__img">
+  </aside>
+</div>
+<footer>
+      <div class="footer">
+         <div class="footer-links">
+         <h4>Flights</h4>
+         <ul>
+           <li><a href=""> Jetblue</a></li>
+           <li><a href="#"> American Air</a></li>
+           <li><a href="#"> Delta</a></li>
+           <li><a href="#"> Spirit </a></li>
+           <li><a href="#"> xxxxxxxxxxx</a></li>
+           <li><a href="#"> xxxxxxxxxxx</a></li>
+         </ul>  
+            <!-- <p>  -"Travel & Weather App Company 2024"- </p>
+      -->
+      </div>
+      <div class="footer-links">
+         <h4>Car Rentals</h4>
+         <ul>
+           <li><a href="https://www.priceline.com/home/" target="_blank">Budget</a></li>
+           <li><a href="https://www.hertz.com/rentacar/reservation/" target="_blank">Hertz</a></li>
+           <li><a href="#"> xxxxxxxxx</a></li>
+           <li><a href="#"> xxxxxxxxx</a></li>
+           <li><a href="#"> xxxxxxxxx</a></li>
+           <li><a href="#"> xxxxxxxxx</a></li>
+     </ul>  
+     </div> 
+     <!-- 3rd Footer Column -->
+
+<div class="footer-links follow">
+   <h4>Follow Us</h4>
+       <ul>
+         <li><a href=""> Facebook</a></li>
+         <li><a href="#"> Instagram</a></li>
+         <li><a href="#"> LinkedIn</a></li>
+         <li><a href="#"> YouTube</a></li>
+         <li><a href="#"> Twitter</a></li>
+         <li><a href="#"> TicTok</a></li>
+   </ul>  
+</div>  
+  </div>
+</footer>
+
+ 
+
+   
+  <script type="text/javascript" src="/dist/main.js">
+
+   // Check that service workers are supported
+   if ('serviceWorker' in navigator) {
+       // Use the window load event to keep the page load performant
+       window.addEventListener('load', () => {
+           navigator.serviceWorker.register('/service-worker.js');
+       });
+   }
+</script>
+</body>
+
+</html>  

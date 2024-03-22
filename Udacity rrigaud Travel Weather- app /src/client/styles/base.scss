@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@400;700;900&display=swap');
+
+
+*, * ::before, ::after {
+    box-sizing: border-box;
+    // font-family: 'Oswald', sans-serif;
+    // font-family: 'Mouse Memoirs', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+h2{
+    font-family:'Mouse Memoirs', sans-serif; 
+    font-size: 1em;
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    border:2px solid rgb(7, 23, 123);
+}  
+.wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0px 10px 10px 10px;
+    background-color: rgb(154, 193, 255);
+//   // opacity: 0.3;  
+}
+
+.container-time{
+    width: 100%;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.50rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #5937e4;
+    border-radius: 3px;
+    width: 275px;
+    margin-top: 10px;
+    margin-left: 2rem; 
+  
+}
+.container__hour {
+    display: flex;
+    padding: 5px; 
+}
+
+.container__output{
+    max-width: 100%; 
+    text-align: center;
+    border: 1px solid #5937e4;
+    background-size: cover;
+    border-radius: 3px;
+    width: 400px;
+    height: 425px;
+    margin-top: 10px;
+    padding: 10px; 
+    margin-left: 2rem; 
+  
+}
+#cityPic {
+    max-width: 100%;
+}
+img{
+  max-width: 100%;
+}
+
+img.cityPic {
+  max-width: 100%;
+}
+ 
+ #date {
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}   
+ 
+    
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+
+
+button:hover{
+    background-color:rgb(187, 141, 236);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+textarea{
+    background:rgb(211, 186, 238);
+    color:  rgb(79, 16, 145);
+    font-size: 1rem;
+  
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+input:focus {
+    background-color: beige;
+}
+select:focus,
+textarea:focus,
+button:focus {
+    outline:none; 
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    // color: #1744e9; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #82817a; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #82817a; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+} 
+
+// -------------------------------------Responsive layout ---------------------
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 480 px;
+      }  
+
+   .form {
+    flex-direction: column;
+   }
+
+   .container .card-form {
+    max-width: 480px;
+    height: 300px;
+    margin: 0px auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: right;
+    
+  
+}
+
+.card-form .container-form {
+    display:flex;
+    // justify-content: center;
+    background-color: rgb(8, 39, 89, 0.5);
+    color:bisque;
+    align-items: center;
+    border: 1px solid #5937e4;
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+    margin-top: 10px; 
+    margin-left: 140px; 
+    padding: 10px;
+}
+
+label{
+    display:flex;
+    margin-left: 1em;
+}
+
+
+input{
+    display:block;
+    height: 50px;
+    width: 175px;
+    background: rgb(154, 193, 255);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: 3px rgb(13, 59, 77);
+    border-radius: 5px;
+    margin-right: 1.5em;
+    // padding: 5px 20px;
+}
+
+.container-form #button{
+    margin-left: 3rem;
+    width: 70px;
+    height: 50px;
+    margin-top: .5em;
+    background:   rgb(199, 164, 24);
+    color: white;
+    font-size: 1.5rem;
+}
+.container .wrapper {
+    flex-direction: column;
+}
+
+.container .wrapper .container-time{
+    font-size: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #5937e4;
+    border-radius: 3px;
+    width: 400px;
+    height: 250;
+    margin-top: 10px;
+    margin-left: 2rem; 
+   
+  
+}
+.container .wrapper  .sidebar {
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    width: 275px;
+    margin-top: 10px;
+    margin-left: 100px; 
+    line-height: 1.2em;
+    padding-bottom: 5px;
+}
+
+}

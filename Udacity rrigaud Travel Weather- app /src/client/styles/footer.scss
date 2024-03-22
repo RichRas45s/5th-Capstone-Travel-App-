@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 15px 100px;
+    background-color:  rgb(3, 40, 100);
+    margin-top: 10px;;
+  
+    
+} 
+
+
+.footer-links li {    
+    list-style: none;
+}
+.footer_links li {
+    display: inline-block;
+   
+   
+} 
+.footer_links li a {
+    transition: all 0.3s ease 0s;
+
+}
+
+.footer-links li a:hover{
+    color: darkgoldenrod;
+}
+
+.footer-links li a{
+    font-size: 10px;
+    line-height: .3px;
+    color:antiquewhite;
+}
+
+.footer h4{
+color:rgb(225, 230, 245);
+font-size: 18px;
+margin-bottom: .6px;
+position: relative; 
+}        
+
+.footer h4::before{ 
+    content:"";
+    width:70px;
+    height:1px;
+    position:absolute;
+    background-color:rgb(128, 65, 21);
+    bottom: -1px;
+}

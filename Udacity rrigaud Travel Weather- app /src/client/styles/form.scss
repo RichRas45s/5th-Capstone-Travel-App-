@@ -1,0 +1,63 @@
+.card-form {
+    max-width: 1200px;
+    height: 300px;
+    margin: 0px auto;
+    border:1px solid  rgb(8, 39, 89);
+    background-image: url(/src/client/images/Travelapp2024wht2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+
+.container-form {
+    display:flex;
+    // justify-content: center;
+    background-color: rgb(8, 39, 89, 0.7);
+    color:bisque;
+    align-items: center;
+    border: 1px solid #5937e4;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 85px; 
+    margin-left: 85px; 
+    padding: 10px;
+}
+
+
+form {
+    display: flex;
+}
+
+
+label{
+    display:flex;
+    margin-left: 1em;
+}
+
+
+input{
+    display:block;
+    height: 50px;
+    width: 175px;
+    background: rgb(154, 193, 255);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: 3px rgb(13, 59, 77);
+    border-radius: 5px;
+    margin-right: 1.5em;
+    // padding: 5px 20px;
+}
+
+#button{
+    margin-left: 1.5rem;
+    width: 150px;
+    height: 50px;
+    background:   rgb(199, 164, 24);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 40%;
+    box-shadow: 2px 4px 5px #444;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}

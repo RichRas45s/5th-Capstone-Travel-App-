@@ -1,0 +1,37 @@
+.primary-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(154, 193, 255);
+    width: 100%;
+   
+}
+
+
+.nav_links {
+    list-style: none;
+    // font-family:'Roboto', sans-serif;
+    font-family:'Mouse Memoirs', sans-serif; 
+    margin: 0;;
+    font-size: 1.7em;
+    text-decoration: none;
+
+   
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 15px;
+    text-decoration: none;
+    
+}
+    
+.nav_links li a {
+    color:rgb(8, 54, 100);
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.nav_links li a:hover{
+    color: rgb(235, 192, 83);
+}
